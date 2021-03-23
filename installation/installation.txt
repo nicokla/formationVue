@@ -1,0 +1,21 @@
+
+Installation de vue
+
+3 installations possibles : cdn, vue-cli, vite 
+
+Avantage de cdn / à vite et vue-cli:
+Rapide a setup
+
+Avantages de vue-cli et vite (par rapport a cdn):
+- fichiers .vue (single file component) ---> only if vue-cli or vite is used :
+3 tags:
+  template (HTML)
+  script (Javascript)
+  style (CSS)
+- installer et utiliser des packages npm
+
+Avantage de vite / à vue-cli: rapidité
+Inconvenient de vite / à vue-cli : seulement dispo pour vue 3, pas pour vue 2
+
+Choix pour ces jours-ci : vite
+Instructions d'installation d'un projet avec vite : cf "vite/vite.txt"

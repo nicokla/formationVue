@@ -1,0 +1,24 @@
+
+https://cli.vuejs.org/guide/installation.html
+https://cli.vuejs.org/guide/creating-a-project.html#vue-create
+
+Avantage par rapport à cdn : permet de creer des composants dans des fichiers .vue
+
+- 1.1) npm should be installed ( https://www.npmjs.com/get-npm )
+npm -v
+
+- 1.2) @vue/cli should be installed
+npm install -g @vue/cli
+
+- 2) Create vue-cli project
+vue create projectName 
+(alternative plus longue: "vue ui")
+
+- 3) Launch vite in developer mode for development
+cd projectName
+npm run serve
+
+- 4) When development is finished, build for production
+npm run build
+
+

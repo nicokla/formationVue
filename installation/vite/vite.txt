@@ -1,0 +1,51 @@
+
+https://vitejs.dev/guide/
+
+Avantage par rapport a vue-cli : plus rapide a reloader la page en mode developement
+Inconvenient : existe seulement pour vue 3 (pas vue 2)
+
+- 1) npm should be installed ( https://www.npmjs.com/get-npm )
+npm -v
+
+- 2) Create vite project
+# npm 6.x
+npm init @vitejs/app my-vue-app --template vue
+
+# npm 7+, extra double-dash is needed:
+
+!!!!!!!!!!!!!!
+npm init @vitejs/app my-vue-app -- --template vue
+!!!!!!!!!!!!!
+
+- 3) Launch vite in developer mode for development
+cd projectName
+npm install
+npm run dev  
+
+- 4) When development is finished, build for production
+npm run build
+
+(astuce: si vous oubliez les mots possibles apres "npm run", faire "cat package.json" pour les trouver dans la section "scripts")
+
+
+
+--------------------
+
+
+Info intéressante sur vite : on peut faire aussi du react ou du vanilla JS avec vite.
+
+Au lieu de la ligne
+npm init @vitejs/app my-vue-app -- --template vue
+
+Il suffit de remplacer le mot clé vue par un de ces mots clés possibles :
+
+vanilla
+vue
+vue-ts
+react
+react-ts
+preact
+preact-ts
+lit-element
+lit-element-ts
+

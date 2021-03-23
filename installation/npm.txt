@@ -1,0 +1,17 @@
+
+npm init -y
+
+package.json
+scripts, dependencies, devDependencies
+npm install
+npm install nomModule
+/node_modules
+
+npm run ...
+
+exemple de package npm :
+https://www.npmjs.com/package/vue-youtube
+
+common troubleshooting : 
+- delete node_modules
+- then do "npm install"

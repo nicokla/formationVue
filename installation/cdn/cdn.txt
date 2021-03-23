@@ -1,0 +1,51 @@
+
+
+Vue 2 :
+https://vuejs.org/v2/guide/installation.html
+
+Vue 3 :
+https://v3.vuejs.org/guide/installation.html#release-notes
+
+
+---------------
+
+1) Include dans une balise <script> 
+
+Examples
+
+- unpkg.com ("unpkg vue" sur google ===> https://unpkg.com/browse/vue@2.6.12/)
+<script src="https://unpkg.com/vue@next"></script>
+<script src="https://unpkg.com/browse/vue@3.0.7/dist/vue.global.js"></script>
+
+- cdnjs.cloudflare.com ("cdnjs vue" sur google ==> https://cdnjs.com/libraries/vue)
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.0.7/vue.cjs.js"></script>
+
+-  cdn.jsdelivr.net
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+
+
+
+2) Pour un serveur simple, plusieurs alternatives sont possibles, parmi lesquelles :
+
+- Live server extension VSCode
+https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+Installer puis click droit sur le fichier html visé, open with live server.
+
+- Web server for chrome
+https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb
+Installer puis se trouve à l'url chrome://apps/
+
+- SimpleHTTPServer
+python -V
+cd ...
+python -m SimpleHTTPServer // si version python 2.X
+python3 -m http.server // si version python 3.X
+
+- node http-server
+https://github.com/http-party/http-server
+# npm install --global http-server
+cd ...
+npx http-server . -p 3000
+
+
