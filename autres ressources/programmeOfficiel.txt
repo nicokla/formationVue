@@ -1,0 +1,80 @@
+Jour 1
+
+Présentation de Vue.js
+  Migration vers Vue.js
+  MVVM selon Vue.js
+  Les outils nécessaires liés à l'utilisation de Vue.js
+  La gestion des interfaces graphiques par les données
+  La liaison de données
+  Les structures de contrôle
+  Répétitives
+  Alternatives
+  Notion d'event
+  Notion de component
+  Exemples de travaux pratiques (à titre indicatif)
+  Installation des outils nécessaires et des librairies
+  Compréhension de Vue CLI
+  Création d'une première application simple sans composant et hors
+  Vue CLI
+  Ecriture d'une page Vue de base
+  Création de la partie modèle
+  Création de la partie interface graphique
+  Intégration de l'interpolation et du double binding
+  Utilisation des directives de boucle
+  Test pour création de l'interface
+
+----------------------------
+
+Jour 2
+
+Les essentiels de Vue.js
+  Cycle de vie d'une requête dans Vue.js et son rôle
+  Les modèles
+  Notion d'interpolation
+  Attributs, filtres et directives
+  Les propriétés calculées
+  Différence entre v-model et v-bind
+  Le v-model
+  Gérer des listes
+  L'affichage conditionnel
+  Event management
+  Les composants dynamiques
+  Echange de données entre composants
+  Exemples de travaux pratiques (à titre indicatif)
+    Amélioration de l'application développée le jour précédent
+    Ajout de boucles de gestion à partir de tableaux internes et issus
+    d'appels REST
+    Binding de données
+    Création des premiers composants Vue réutilisables
+    Application permettant de comprendre l'échange de données entre
+    composants (du père au fil, du fils au père,
+    entre frères) ++++++++++++++++++(2)
+
+Aspects avancés de Vue.js
+  Transitions et transitions CSS  ++++++++++++(5)
+  Transitions dynamiques  ++++++++++++(5)
+  Diverses animations  ++++++++++++(5)
+  Les fonctions "render" ++++++++++++++++++++++(4)
+  Les divers types de composants
+  Les composants fonctionnels
+  Les Single File Components
+  Les différents types de directives
+  Créer une directive adaptée  ++++++++++++++++++++++(1)
+  Exemples de travaux pratiques (à titre indicatif)
+    Ajout de transition Vue.js dans le projet  ++++++++++++(5)
+    Utilisation des directives déjà présentes
+    Création de nouvelles directives  ++++++++++++++++++(1)
+
+--------------------------
+
+Jour 3
+Les extensions
+  Type mixin ++++++++++++++++++++++(3)
+  Type plug-in
+  Les extensions (composants) monofichier
+  Exemple de travaux pratiques (à titre indicatif)
+    Développement de composants monofichier (Single File Component)
+Le routing dans Vue.js
+  Présentation des routes
+  Les modes
+  Les liens

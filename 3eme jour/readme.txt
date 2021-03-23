@@ -77,6 +77,7 @@ https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/
 
 4.1) Trucs avec des exemples dans "autres ressources"
 
+++++++++++++(1)
 * directives personalisées, v-truc="" (cf dossier "../autres ressources/tuto grafikart/5")
 
 * watched properties (cf grafikart/4)
@@ -93,17 +94,36 @@ https://vuetifyjs.com/en/components/navigation-drawers/
 * SCSS
 npm install -D sass
 
+++++++++++++++(2)
+* brother components communication:
+https://stackoverflow.com/questions/38616167/communication-between-sibling-components-in-vue-js-2-0
+Solution 1 : 
+  use mixins
+Solution 2:
+  Component 1:
+  this.$root.$emit('eventing', data);
+  Component 2:
+  mounted() {
+      this.$root.$on('eventing', data => {
+          console.log(data);
+      });
+  }
 
 -----------------
 
 4.2) Trucs sans exemples dans "autres ressources"
 
+++++++++++++++++++++(3)
 * mixins (to share data between brother components ?)
 https://v3.vuejs.org/guide/mixins.html
 
+++++++++++++++++++++++(4)
 * render functions
 https://v3.vuejs.org/guide/migration/render-function-api.html
+----> Use jsx in vue :
+https://fr.vuejs.org/v2/guide/render-function.html
 
++++++++++++++++++++++(5)
 * outils pour faire des animations inclus dans vue
 https://fr.vuejs.org/v2/guide/transitions.html
 https://v3.vuejs.org/guide/transitions-list.html#list-entering-leaving-transitions
