@@ -1,0 +1,29 @@
+Idees de trucs a faire :
+
+jour 1: decouverte de vue
+- tester les differentes input avec v-model
+  text (default)
+  float
+  integer : comme text
+  integer : comme choice
+- utiliser des computed ou des methods et les {{}} pour voir l'effet
+- changer le style (size, color, position, etc.) en fonction des input
+
+jour 2: dialogue entre composants pere et fils (props, refs, emit)
+- creer des composants, les faire dialoguer
+
+jour 3: pour aller plus loin
+- vue-router
+- vue composition api
+
+Other exercices ideas :
+- todo list mevn, customiser l'ui coté client,
+- integrer un composant du web, par exemple un youtube player (adaptation vue 2 a vue 3 necessaire ?)
+- navigation panel, par exemple celui de antdesign, integrer avec vue router
+- prendre une liste, qui a affiche des trucs, quand on le select, limage s'update ainsi que le titre et le prix.
+- modal component
+- alert cf Glagan github
+- navigation par onglets, cf tuto grafikart
+- un carousel, cf tuto grafikart
+- tester le dialogue entre composants freres, cf stackoverflow
+- tester vuex
