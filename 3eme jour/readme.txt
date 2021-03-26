@@ -10,20 +10,28 @@ pass arguments when navigating, get those when arriving.
 
 ------------------
 
-- Composition API, et <script setup>
+2) Vue 3 : Breaking changes from Vue 2, Composition API, <script setup>
 
-https://v3.vuejs.org/guide/composition-api-introduction.html#why-composition-api
-https://v3.vuejs.org/guide/composition-api-setup.html#arguments
-
+Nouveau (Vue 3 ==> released 18 Septembre 2020)
 Methode alternative pour creer un component, different d'un composant vue classique, la fonction setup remplace les champs habituels (data, methods, etc.).
+
+Breaking changes of Vue 3 :
+https://youtu.be/ZjBiBVNWfJ8
+Composition API :
+https://youtu.be/bwItFdPt-6M
+Github of the videos :
+https://github.com/academind/vue-3-update
 
 cf projets
 "./compositionAPI_scriptSetup"
 "../autres ressources/compositionAPI_example"
 "../autres ressources/compositionAPI_todoApp"
 
-import { defineProps, onMounted, reactive, ref, useContext, watch } from "vue";
+Documentation
+https://v3.vuejs.org/guide/composition-api-introduction.html#why-composition-api
+https://v3.vuejs.org/guide/composition-api-setup.html#arguments
 
+import { defineProps, onMounted, reactive, ref, useContext, watch } from "vue";
 
 
 
@@ -33,14 +41,18 @@ import { defineProps, onMounted, reactive, ref, useContext, watch } from "vue";
 
 3.1) CSS / components dans vue 
 
-On peut mettre des media-queries (pour avoir une app responsive mobile) et des keyframes (animations) dans la balise <style>.
+On peut mettre des media-queries (pour avoir une app responsive mobile) et des keyframes (animations) dans la balise <style> des fichiers au format ".vue".
 
 Vuetify est la librairie de composants la plus utilisé en Vue.js.
 Probleme : vuetify est sous vue 2, pas encore porté sous vue 3 (en fait il est en alpha mais pas pret pour la production).
+Le meme probleme existe pour bcp d'autres libraries qui n'ont pas encore ete updatées vers Vue 3.
+Un exemple de library qui a ete updatée est Ant Design Vue.
 
 CSS pur plutot que vuetify : par exemple, templates tailwind
 Installation : https://tailwindcss.com/docs/guides/vue-3-vite
-Exemple : google "login template tailwind" : https://codepen.io/PortSpasy/pen/GRJyJyZ
+Exemple : 
+- vueRouter project uses tailwind.css
+- google "login template tailwind" : https://codepen.io/PortSpasy/pen/GRJyJyZ
 Tailwind cheatsheet : https://nerdcave.com/tailwind-cheat-sheet
 Flexbox help: https://flexbox.help/
 

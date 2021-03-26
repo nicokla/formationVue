@@ -1,0 +1,37 @@
+----------------------
+
+I) Install Scoop (windows) or Brew (mac)
+Follow the instructions here:
+
+scoop: https://scoop.sh/ (windows)
+brew: https://brew.sh/ (mac)
+Linux people, you should know how to handle this
+
+Installing scoop, details :
+1) launch a terminal (powershell) by typing powershell in the search bar
+2) copy the following line in the terminal, then type enter :
+Set-ExecutionPolicy RemoteSigned -scope CurrentUser
+3) type A and type enter again
+4) copy the following line, then type enter
+iwr -useb get.scoop.sh | iex
+
+----------------------
+
+II) Install git, vscode and nodejs
+
+# windows
+scoop install git
+git --version
+scoop install nodejs
+node --version
+scoop bucket add extras
+scoop install vscode
+code --version
+
+# mac
+# git should already be installed
+git --version
+brew install node
+node --version
+brew install --cask visual-studio-code
+code --version
