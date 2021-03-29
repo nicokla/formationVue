@@ -135,6 +135,11 @@ https://v3.vuejs.org/guide/migration/render-function-api.html
 ----> Use jsx in vue :
 https://fr.vuejs.org/v2/guide/render-function.html
 
+
+provide / inject
+https://v3.vuejs.org/guide/component-provide-inject.html#working-with-reactivity
+
+
 +++++++++++++++++++++(5)
 * outils pour faire des animations inclus dans vue
 https://fr.vuejs.org/v2/guide/transitions.html

@@ -33,7 +33,7 @@ JS stuff:
 
 HTML stuff:
 - hors des balises:
-{{}}
+{{ }}
 
 - dans les balises (--> directives):
 * v-if, v-else-if, v-else
@@ -52,7 +52,7 @@ https://fr.vuejs.org/v2/guide/events.html
 @mousedown @mouseup @keyup @keydown
 + event personnalisés (demain)
 
-* v-bind = :
+* v-bind:style=""  <====>  :style=""
 https://fr.vuejs.org/v2/guide/syntax.html#Attributs
 <mon-composant argument1="simple texte" :argument2="...dujs..." > ... </mon-composant>
 
