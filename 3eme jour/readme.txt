@@ -137,8 +137,7 @@ https://fr.vuejs.org/v2/guide/render-function.html
 
 
 provide / inject
-https://v3.vuejs.org/guide/component-provide-inject.html#working-with-reactivity
-
+https://v3.vuejs.org/guide/component-provide-inject.html
 
 +++++++++++++++++++++(5)
 * outils pour faire des animations inclus dans vue
