@@ -14,7 +14,7 @@ npm init @vitejs/app my-vue-app --template vue
 # npm 7+, extra double-dash is needed:
 
 !!!!!!!!!!!!!!
-npm init @vitejs/app my-vue-app -- --template vue
+npm init @vitejs/app demo -- --template vue
 !!!!!!!!!!!!!
 
 - 3) Launch vite in developer mode for development
