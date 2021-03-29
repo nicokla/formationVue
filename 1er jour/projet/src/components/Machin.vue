@@ -1,6 +1,8 @@
 <template>
 <li>
-  {{ myElement.title }}
+  {{ myElement.title }} : {{myElement.priority}}
+
+  <!-- todo: choice of priorities, v-model sur myElement.priority -->
   <button @click="deleteElement()">
     delete
   </button>
