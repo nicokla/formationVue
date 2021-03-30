@@ -5,10 +5,10 @@
 <br>
   <Machin @eventName="functionFather2($event)">
   </Machin>
-  
+
   <!-- <br> <br>
-  <BasicInput :value="email" @input="gotAnInput($event)" /> --> -->
-  <!-- {{ email }}
+  <BasicInput :value="email" @input="gotAnInput($event)" /> 
+  {{ email }} -->
 </template>
 
 <script>
