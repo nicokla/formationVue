@@ -10,6 +10,7 @@
   <ul>
     <Machin
       v-for="element in lowListe"
+      :key="element.id"
       v-bind:myElement="element"
       v-on:deleteEvent="deleteElement($event)"
     ></Machin>

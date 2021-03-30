@@ -1,0 +1,20 @@
+<template>
+  <input @input="handleInput" />
+</template>
+
+<script>
+export default {
+  name: 'BasicInput',
+  prop: ['value'],
+  data () {
+    return {
+      content: this.value
+    }
+  },
+  methods: {
+    handleInput (e) {
+      this.$emit('input', this.content)
+    }
+  }
+}
+</script>

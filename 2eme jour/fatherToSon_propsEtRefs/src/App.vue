@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Machin ref="monMachin" :param="yolo"></Machin>
+    <Machin ref="monBidule" :param="yolo" myColor="red"></Machin>
     <input type="text" v-model="yolo"/>
     <p style="background-color: green;">
       {{yolo}}
@@ -20,7 +20,7 @@ export default {
     }
   },
   mounted(){
-    this.$refs.monMachin.printMessage()
+    this.$refs.monBidule.printMessage()
   }
 }
 </script>

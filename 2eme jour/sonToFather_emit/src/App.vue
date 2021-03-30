@@ -1,24 +1,42 @@
 <template>
-  <Machin v-for="truc in trucs" ref="monMachin" @eventName="functionFather($event, truc)">
+  <Machin v-for="truc in trucs" @eventName="functionFather($event, truc)">
   </Machin>
+
+<br>
+  <Machin @eventName="functionFather2($event)">
+  </Machin>
+  
+  <!-- <br> <br>
+  <BasicInput :value="email" @input="gotAnInput($event)" /> --> -->
+  <!-- {{ email }}
 </template>
 
 <script>
 import Machin from './components/Machin.vue'
+import BasicInput from './components/BasicInput.vue'
 
 export default {
   name: 'App',
-  components: {Machin},
+  components: {Machin, BasicInput},
   methods:{
+    gotAnInput(someData){
+      console.log('heho', someData)
+      this.email = someData.target.value
+    },
     functionFather(dataChild, dataFather){
       console.log('Ici papa, bien reçu fiston.')
       console.log(`Data child: ${JSON.stringify(dataChild)} / data father: ${dataFather}`)
+    },
+    functionFather2(dataChild){
+      console.log('Ici papa, bien reçu fiston (1 seul argument).')
+      console.log(`Data child: ${JSON.stringify(dataChild)}`)
     }
   },
   data(){
     return {
       trucs:['hey', 'yo'],
-      yolo: 'salut'
+      yolo: 'salut',
+      email: ''
     }
   }
 }

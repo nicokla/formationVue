@@ -28,7 +28,11 @@ export default {
     };
   },
   mounted() {
+    console.log(`hello from ${this.myElement.title}`)
     this.showProps();
+  },
+  beforeUnmount(){
+    console.log(`bye bye from ${this.myElement.title}`)
   },
   methods: {
     deleteElement() {

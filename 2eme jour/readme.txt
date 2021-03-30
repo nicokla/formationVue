@@ -72,7 +72,7 @@ functionChild(){
 }
 
 -   father component side :
-<componentChild v-on:eventName="functionFather($event, dataFather)" // $event is optionnal
+<componentChild @eventName="functionFather($event, dataFather)" // $event is optionnal
 function functionFather(dataChild, dataFather){...} // data is optionnal
 
 
@@ -87,6 +87,7 @@ https://www.digitalocean.com/community/tutorials/how-to-add-v-model-support-to-c
 
 exemple côté père:
 <basic-input v-model="email" />
+
 equivalent à
 <input :value="email" @input="e => email = e.target.value" />
 

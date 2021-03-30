@@ -1,12 +1,12 @@
 <template>
-<p>{{param}}</p>
+<p v-bind:style="getStyle()">{{param}}</p>
 </template>
 
 <script>
 
 export default {
   name: 'Machin',
-  props:["param"],
+  props:["param",'myColor'],
   // props:{
   //   param: {
   //     type: Number,
@@ -21,10 +21,16 @@ export default {
   methods:{
     printMessage(){
       console.log('coucou')
+    },
+    getStyle(){
+      return `background-color: ${this.myColor};`
     }
   }
 }
 </script>
 
 <style>
+p{
+  
+}
 </style>
