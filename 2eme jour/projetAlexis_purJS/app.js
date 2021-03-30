@@ -1,4 +1,4 @@
-const options = [
+const optionsGlobal = [
   { text: "High", value: "high" },
   { text: "Middle", value: "middle" },
   { text: "Low", value: "low" },
@@ -15,7 +15,7 @@ let Machin = {
   },
   data() {
     return {
-      options: options
+      options: optionsGlobal
     };
   },
   mounted() {
@@ -66,7 +66,7 @@ let vm = new Vue({
         { id: 5, title: "6eme todo", priority: "middle" },
       ],
       priority: "high",
-      options: options,
+      options: optionsGlobal,
     };
   },
 	methods: {

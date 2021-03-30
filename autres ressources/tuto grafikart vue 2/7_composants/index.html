@@ -10,6 +10,11 @@
 </head>
 <body>
 	<div id="app">
+    <select v-model="myTodo.priority">
+      <option v-for="option in options" :value="option.value">
+        {{ option.text }}
+      </option>
+    </select>
 		<form-user v-model="user">
 			<div slot="header">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa error harum, quam numquam libero quia explicabo. Beatae, quibusdam vel tenetur repudiandae ipsam at molestiae corporis fugiat blanditiis nisi excepturi eos.
 			</div>

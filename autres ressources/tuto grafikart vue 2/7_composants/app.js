@@ -7,6 +7,12 @@
 // 	},
 // 	template: `<div class="ui message" :class="type">{{ message }}</div>`
 // })
+const optionsGlobal = [
+  { text: "High", value: "high" },
+  { text: "Middle", value: "middle" },
+  { text: "Low", value: "low" },
+];
+
 
 let message = {
 	props:{
@@ -92,12 +98,14 @@ let vm = new Vue({
 	el: '#app',
 	components:{ message, counter, formUser },
 	data: {
+    myTodo: { title: "", priority: "high" },
 		message: 'un meilleur texte',
 		alert: false,
 		user: {
 			firstname: 'Jean',
 			lastname: 'Dupont'
-		}
+		},
+    options: optionsGlobal
 	},
 	methods:{
 		showAlert(){
