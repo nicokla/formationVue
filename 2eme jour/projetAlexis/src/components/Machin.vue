@@ -1,6 +1,6 @@
 <template>
   <li>
-    {{ myElement.title }} : {{ myElement.priority }}
+    {{ myElement.title }}
     <select v-model="myElement.priority">
       <option v-for="option in options" :value="option.value">
         {{ option.text }}
@@ -13,6 +13,7 @@
 </template>
 
 <script>
+import { options } from "../priorities";
 export default {
   name: "Machin",
   props: {
@@ -23,11 +24,7 @@ export default {
   },
   data() {
     return {
-      options: [
-        { text: "High", value: "high" },
-        { text: "Middle", value: "middle" },
-        { text: "Low", value: "low" },
-      ],
+      options: options
     };
   },
   mounted() {
@@ -41,6 +38,7 @@ export default {
       console.log(this.myElement);
     },
   },
+  
 };
 </script>
 

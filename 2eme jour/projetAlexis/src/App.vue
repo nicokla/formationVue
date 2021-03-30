@@ -1,7 +1,7 @@
 <template>
   <input type="text" v-model="myTodo.title" />
-  <select v-model="priority">
-    <option v-for="option in priorities" :value="option.value">
+  <select v-model="myTodo.priority">
+    <option v-for="option in options" :value="option.value">
       {{ option.text }}
     </option>
   </select>
@@ -41,6 +41,7 @@
 <script>
 import Machin from "./components/Machin.vue";
 // import MyComponent from "./components/MyComponent.vue";
+import { options } from "../src/priorities";
 
 export default {
   name: "App",
@@ -58,6 +59,7 @@ export default {
         { id: 5, title: "6eme todo", priority: "middle" },
       ],
       priority: "high",
+      options: options,
     };
   },
   methods: {
@@ -65,7 +67,7 @@ export default {
       this.liste.push({
         id: this.liste.length,
         title: this.myTodo.title,
-        priority: "high",
+        priority: this.myTodo.priority,
       });
     },
     deleteElement(id) {
@@ -86,7 +88,6 @@ export default {
       return this.liste.filter((e) => e.priority == "high");
     },
     priorities() {
-      console.log(Machin.data); 
       return Machin.data;
     },
   },
