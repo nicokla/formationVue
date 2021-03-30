@@ -1,16 +1,18 @@
 {
-  "name": "exempleAxios",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "demo",
+  "version": "0.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
-    "jquery": "^3.6.0"
+    "vue": "^3.0.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.1.4",
+    "@vue/compiler-sfc": "^3.0.5",
+    "vite": "^2.0.0-beta.70"
   }
 }
