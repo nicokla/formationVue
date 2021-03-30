@@ -93,9 +93,6 @@ let vm = new Vue({
     },
     highListe() {
       return this.liste.filter((e) => e.priority == "high");
-    },
-    priorities() {
-      return Machin.data;
-    },
+    }
   },
 })
