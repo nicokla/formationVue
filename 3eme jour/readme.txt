@@ -34,6 +34,12 @@ https://v3.vuejs.org/guide/composition-api-setup.html#arguments
 import { defineProps, onMounted, reactive, ref, useContext, watch } from "vue";
 
 
+----------------
+
+
+***) provide et inject (communication composants petit fils / gd pere)
+https://v3.vuejs.org/guide/component-provide-inject.html#working-with-reactivity
+
 
 ---------------------------
 3) Infos en plus pour finir
