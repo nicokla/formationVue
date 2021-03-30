@@ -24,7 +24,7 @@
         v-for="element in lowListe"
         :key="element.id"
         v-bind:myelement="element"
-        v-on:deleteEvent="deleteElement($event)"
+        v-on:delete_event="deleteElement($event)"
       ></Machin>
     </ul>
   
@@ -33,7 +33,7 @@
       <Machin
         v-for="element in middleListe"
         v-bind:myElement="element"
-        v-on:deleteEvent="deleteElement($event)"
+        v-on:delete_event="deleteElement($event)"
       ></Machin>
     </ul>
   
@@ -42,7 +42,7 @@
       <Machin
         v-for="element in highListe"
         v-bind:myElement="element"
-        v-on:deleteEvent="deleteElement($event)"
+        v-on:delete_event="deleteElement($event)"
       ></Machin>
     </ul>
     <br />

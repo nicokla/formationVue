@@ -28,7 +28,7 @@ let Machin = {
   },
   methods: {
     deleteElement() {
-      this.$emit("deleteEvent", this.myelement.id);
+      this.$emit("delete_event", this.myelement.id);
     },
     showProps() {
       console.log(this.myelement);
