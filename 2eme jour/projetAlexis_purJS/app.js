@@ -8,10 +8,11 @@ const optionsGlobal = [
 let Machin = {
 	name: "Machin",
   props: {
-    myElement: {
-      type: Object,
-      default: { title: "titi", priority: "high" },
-    },
+    myelement: Object
+    // {
+    //   type: Object,
+    //   default: { title: "titi", priority: "high" },
+    // },
   },
   data() {
     return {
@@ -19,31 +20,31 @@ let Machin = {
     };
   },
   mounted() {
-    console.log(`hello from ${this.myElement.title}`)
+    console.log(`hello from ${this.myelement.title}`)
     this.showProps();
   },
   beforeUnmount(){
-    console.log(`bye bye from ${this.myElement.title}`)
+    console.log(`bye bye from ${this.myelement.title}`)
   },
   methods: {
     deleteElement() {
-      this.$emit("deleteEvent", this.myElement.id);
+      this.$emit("deleteEvent", this.myelement.id);
     },
     showProps() {
-      console.log(this.myElement);
+      console.log(this.myelement);
     },
   },
   
 	template: /*html*/`
   <li>
-    {{ myElement.title }}
-    <select v-model="myElement.priority">
+    {{ myelement.title }}
+    <select v-model="myelement.priority">
       <option v-for="option in options" :value="option.value">
         {{ option.text }}
       </option>
     </select>
 
-    <!-- todo: choice of priorities, v-model sur myElement.priority -->
+    <!-- todo: choice of priorities, v-model sur myelement.priority -->
     <button @click="deleteElement()">delete</button>
   </li>
 	`

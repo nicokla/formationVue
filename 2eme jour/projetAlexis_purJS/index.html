@@ -19,10 +19,11 @@
     <button @click="addElement()">add</button>
     <p>Priority low :</p>
     <ul>
+      <!-- <li v-for="element in lowListe">{{ element }}</li> -->
       <Machin
         v-for="element in lowListe"
         :key="element.id"
-        v-bind:myElement="element"
+        v-bind:myelement="element"
         v-on:deleteEvent="deleteElement($event)"
       ></Machin>
     </ul>
@@ -46,8 +47,6 @@
     </ul>
     <br />
     <br />
-  
-    <MyComponent v-bind:variable="myTodo.title"></MyComponent>
-	</div>
+  </div>
 </body>
 </html>
